@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fitlife - Work Hard To Get Better Life</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="/fitlife-master/assets/css/login-style.css">
+  <link rel="stylesheet" href="/fitlife-master/style.css" />
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Catamaran:wght@600;700;800;900&family=Rubik:wght@400;500;800&display=swap"
+    rel="stylesheet">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/hero-banner.png">
+  <link rel="preload" as="image" href="./assets/images/hero-circle-one.png">
+  <link rel="preload" as="image" href="./assets/images/hero-circle-two.png">
+  <link rel="preload" as="image" href="./assets/images/heart-rate.svg">
+  <link rel="preload" as="image" href="./assets/images/calories.svg">
+<style>
+  .profile {
+  color:black;
+  font-size:25px;
+}
+/* Media query for screens with a width of 350px */
+@media only screen and (max-width: 550px) {
+      /* Reduce font size of the header logo */
+      /* .logo .span {
+        font-size: 20px; */
+      
+.product{
+  height: 100%;
+  width: 100%;
+}
+.product img{
+  width: 100px;
+display:inline;
+}
+.header{
+  position:absolute;
+}
+.bi-cart-fill{
+color:white;
+}
+}
+    .bi-cart-fill {
+  color:orange;
+  font-size: 24px; /* optional: change the font size */
+}
+
+</style>
+</head>
+<body>
+
+ <header class="header" data-header style="margin-top:30px;"> 
+    <div class="container">
+
+      <a href="/fitlife-master/index.html" class="logo">
+        <ion-icon name="barbell-sharp" aria-hidden="true"></ion-icon>
+
+        <span class="span">Fitlife</span>
+      </a>
+
+      <nav class="navbar" data-navbar>
+
+        <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+          <ion-icon name="close-sharp" aria-hidden="true"></ion-icon>
+        </button>
+
+        <ul class="navbar-list">
+
+          <li>
+            <a href="/fitlife-master/index.html" class="navbar-link active" data-nav-link>Home</a>
+          </li>
+
+          <li>
+            <a href="/fitlife-master/shop.html" class="navbar-link" data-nav-link>Shop</a>
+          </li>
+          <li><i class="bi bi-cart-fill"></i><span class="cart-badge"></span></a></li>
+          <li style="margin-right:30px;">
+            <a data-nav-link>User321</a>
+          </li>
+
+        </ul>
+<!-- Add to cart -->
+      </nav>
+
+      <!-- <a href="#" class="btn btn-secondary">Join Now</a> -->
+
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </button>
+
+    </div>
+  </header>
+  <!-- 
+    - #FOOTER
+  -->
+
+  <!-- <footer class="footer"> -->
+
+    <div class="section footer-top bg-dark has-bg-image" style="background-image: url('./assets/images/footer-bg.png')">
+      <div class="container">
+      </div>
+    </div>  
+
+  <br><br>
+
+
+    <div class="product" style="margin-left: 400px; width: 400px;">
+    
+      <img src="/fitlife-master/img/7.jpg" alt="Product 1" /></a>
+      <h4>Spartan Nutrition L- Glutaking PRO Series Protein Sports Supplements - 300g<h4>
+      <p>Price &#x20B9; 1189</p>
+      <button
+      class="add-to-cart-button"
+      data-id="1"
+      data-name="Spartan Nutrition L- Glutaking PRO Series Protein Sports Supplements - 300g"
+      data-price="1189"
+    >
+      Add to Cart
+    </button>
+    
+  </div>
+  
+</div>
+</main>
+<footer>
+<p> Made By Rishab and Shina &nbsp;<i class="bi bi-fire"></i></p>
+<br><p>&copy; 2023 Shoes Online. All rights reserved.</p>
+
+</footer>
+</div>
+
+
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="caret-up-sharp" aria-hidden="true"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js" defer></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script>
+    const addToCartButtons = document.querySelectorAll('.add-to-cart-button');
+const cartBadge = document.querySelector('.cart-badge');
+let cartItems = [];
+
+addToCartButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    // get product data from button's data attributes
+    const id = button.dataset.id;
+    const name = button.dataset.name;
+    const price = button.dataset.price;
+
+    // check if item is already in cart
+    const existingItem = cartItems.find(item => item.id === id);
+
+    if (existingItem) {
+      // increase quantity of existing item
+      existingItem.quantity++;
+    } else {
+      // add new item to cart
+      cartItems.push({
+        id,
+        name,
+        price,
+        quantity: 1
+      });
+    }
+
+    // update cart badge
+    const totalItems = cartItems.reduce((total, item) => total + item.quantity, 0);
+    cartBadge.textContent = totalItems;
+
+    // save cart items to local storage
+    localStorage.setItem('cartItems', JSON.stringify(cartItems));
+  });
+});
+  </script>
+<script src="cart.js"></script>
+</body>
+
+</html>
