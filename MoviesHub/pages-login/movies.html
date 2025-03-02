@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>MoivesHub</title>
+    <link rel="stylesheet" type="text/css" href="/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Catamaran:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      header1{
+        height: 10px;
+        width: 200vh;
+      }
+       h4{
+        font-size: 50px;
+        /* margin-top: 50px; */
+        margin-left: 5px;
+        color: red;
+      }
+      .container ul li{
+			font-size: 40px;
+			margin-bottom: -65px;
+      margin-right: 20px;
+			
+		 }
+     @media only screen and (max-width: 500px) {
+      * {
+  margin: 0;
+	padding: 0;
+	font-family: 'Catamaran', sans-serif;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    font-size: 25px;
+    line-height: 1.5;
+}
+    header1{
+      /* display: none; */
+      padding-right:170px ;
+
+    } 
+    .product-container {
+      
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  header1 {
+    height: 10px; /* set height to auto to show the header */
+    width:550px;
+    font-size: 2px;
+  }
+  h4 {
+    display: none;
+    font-size: 20px; /* decrease font size of h4 in 500px */
+    margin-left: 5px; /* increase margin left of h4 in 500px */
+    /* margin-top: -50px; */
+    padding-top: -10px;
+  }
+  .container ul li {
+    font-size: 1px; /* decrease font size of li in 500px */
+    /* margin-bottom: -40px; decrease margin bottom of li in 500px */
+    /* margin-right: 10px; increase margin right of li in 500px */
+padding-left: -10px;
+  }
+  .d-flex {
+      margin-top:100px;
+      margin-bottom:100px;
+      margin-left:10px;
+    /* margin-right: 150px; */
+      /* display:none; */
+      flex-wrap: wrap;
+    }
+    .btn {
+      height: 6px;
+      margin-left: 5px;
+      margin-bottom: 12px;
+      /* align-items: center; */
+      text-align: center;
+    /* display: none; */
+    }
+    
+    .form-control {
+      /* display: none; */
+      height: 3px;
+      margin-bottom: 10px;
+      /* margin-bottom: 5px; */
+    }
+    .nav ul li{
+      font-size: 6px;
+      /* display: none; */
+      margin-right: 15x;
+      /* font-size: 2px; */
+    }
+    .product img {
+      /* width: 100%; */
+      height: 140px;
+      margin-left: -5px;
+      border-radius: 25px;
+    }
+    .product h3 {
+      font-size: 15px;
+      margin-top: 5px;
+    }
+    .product button {
+      font-size: 10px;
+border-radius: 10px;
+    } 
+   }
+    </style>
+  </head>
+  <body>
+    <header1>
+      <h4>MoviesHub</h4>
+      <div class="container">
+        <!-- <img src="logo.png" class="logo-bottom" /> -->
+        
+
+        <div class="nav">
+          <ul>
+            <li><a href="/index1.html">Home</a></li>
+            <li class="active"><a href="/pages-login/movies.html">Movies</a></li>
+            <li><a href="/pages-login/webseries.html">Web Series</a></li>
+            <li><a href="/pages-login/aboutus.html">About us</a></li>
+            <!-- <li><i class="bi bi-person-circle"></i></li> -->
+            <li style="margin-right: -200px;">User321<i class="bi bi-person-fill"></i>
+          </ul>
+          <!-- <li style="margin-right: -200px;">User321<i class="bi bi-person-fill"></i> -->
+        </div>
+      </div>
+
+      <form class="d-flex"  method="get">
+        <input class="form-control me-2" type="search" placeholder="Search songs" aria-label="Search" name="q">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+      
+    </header1>
+    <div id="products">
+      <!-- <h2 style="text-align: center; font-family: 'Delicious Handrawn', cursive;color:aliceblue">ENGLISH SONGS</h2> -->
+      
+      <h1 style="font-size: 35px; color: wheat">
+        <i class="bi bi-disc"></i> Thriller Movies
+      </h1>
+      <div class="product-container">
+        <div class="product">
+          <a href="/subpages/9.html"> <img src="/img/9.jpg" /></a>
+          <h3>James Bond</h3>
+
+          <a href="/subpages/9.html">
+            <button>Download</button>
+          </a>
+        </div>
+        <div class="product">
+          <a href="/subpages/10.html"> <img src="/img/10.jpg" /></a>
+          <h3>Ogre (2008)</h3>
+
+          <a href="/subpages/10.html">
+            <button>Download</button>
+          </a>
+        </div>
+        <div class="product">
+          <a href="/subpages/11.html"> <img src="/img/11.jpg" /></a>
+          <h3>Pandora: Beneath The Paradise</h3>
+
+          <a href="/subpages/11.html">
+            <button>Download</button>
+          </a>
+        </div>
+        <div class="product">
+          <a href="/subpages/12.html"> <img src="/img/12.jpg" /></a>
+          <h3>Liaison (2023)</h3>
+
+          <a href="/subpages/12.html">
+            <button>Download</button>
+          </a>
+        </div>
+        <div class="product">
+          <a href="/subpages/13.html">
+            <img src="/img/13.jpg" alt="Product 2"
+          /></a>
+          <h3>Rabbit Hole (2023)</h3>
+
+          <a href="/subpages/13.html">
+            <button>Download</button>
+          </a>
+        </div>
+        <div class="product">
+          <a href="/subpages/14.html">
+            <img src="/img/14.jpg" alt="Product 3"
+          /></a>
+          <h3>Unseen (2023)</h3>
+
+          <a href="/subpages/14.html">
+            <button>Download</button>
+          </a>
+        </div>
+        <div class="product">
+          <a href="/subpages/15.html"> <img src="/img/15.jpg" /></a>
+          <h3>Insight (2021)</h3>
+
+          <a href="/subpages/15.html">
+            <button>Download</button>
+          </a>
+        </div>
+        <div class="product">
+          <a href="/subpages/16.html">
+            <img src="/img/16.jpg" alt="Product 4"
+          /></a>
+          <h3>Ouija Seance: The Final Game</h3>
+
+          <a href="/subpages/16.html">
+            <button>Download</button>
+          </a>
+        </div>
+      </div>
+      <div class="product-container">
+        <div class="product">
+          <a href="/subpages/16.html">
+            <img src="/img/16.jpg" alt="Product 4"
+          /></a>
+          <h3>Ouija Seance: The Final Game</h3>
+
+          <a href="/subpages/16.html">
+            <button>Download</button>
+          </a>
+        </div>
+
+        <div class="product">
+          <a href="/subpages/12.html"> <img src="/img/12.jpg" /></a>
+          <h3>Liaison (2023)</h3>
+
+          <a href="/subpages/12.html">
+            <button>Download</button>
+          </a>
+        </div>
+        <div class="product">
+          <a href="/subpages/10.html"> <img src="/img/10.jpg" /></a>
+          <h3>Ogre (2008)</h3>
+
+          <a href="/subpages/10.html">
+            <button>Download</button>
+          </a>
+        </div>
+        <div class="product">
+          <a href="/subpages/11.html"> <img src="/img/11.jpg" /></a>
+          <h3>Pandora: Beneath The Paradise</h3>
+
+          <a href="/subpages/11.html">
+            <button>Download</button>
+          </a>
+        </div>
+      </div>
+      <div>
+        <h1 style="font-size: 35px; color: wheat">
+          <i class="bi bi-disc"></i>Romantic Movies
+        </h1>
+        <div class="product-container">
+          <div class="product">
+            <a href="/subpages/1.html"> <img src="/img/1.jpg" /></a>
+            <h3>Dr. Romantic (Season 1 – 2)</h3>
+  
+            <a href="/subpages/1.html">
+              <button>Download</button>
+            </a>
+          </div>
+          <div class="product">
+            <a href="/subpages/2.html">
+              <img src="/img/2.jpg" alt="Product 2"
+            /></a>
+            <h3>All I Want for Love Is You</h3>
+  
+            <a href="/subpages/2.html">
+              <button>Download</button>
+            </a>
+          </div>
+          <div class="product">
+            <a href="/subpages/3.html">
+              <img src="/img/3.jpg" alt="Product 3"
+            /></a>
+            <h3>Misty (Season 1)</h3>
+            <a href="/subpages/3.html">
+              <button>Download</button>
+            </a>
+          </div>
+          <div class="product">
+            <a href="/subpages/4.html">
+              <img src="/img/4.jpg" alt="Product 4"
+            /></a>
+            <h3>PlayersCoi Leray.</h3>
+  
+            <a href="/subpages/4.html">
+              <button>Download</button>
+            </a>
+          </div>
+  
+          <div class="product">
+            <a href="/subpages/5.html">
+              <img src="/img/5.jpg" alt="Product 4"
+            /></a>
+            <h3>Perfect Addiction (2023)</h3>
+            <a href="/subpages/5.html">
+              <button>Download</button>
+            </a>
+          </div>
+          <div class="product">
+            <a href="/subpages/6.html">
+              <img src="/img/6.jpg" alt="Product 2"
+            /></a>
+            <h3>Miss Hammurabi (Season 1)</h3>
+  
+            <a href="/subpages/6.html">
+              <button>Download</button>
+            </a>
+          </div>
+          <div class="product">
+            <a href="/subpages/7.html">
+              <img src="/img/7.jpg" alt="Product 3"
+            /></a>
+            <h3>Lie to Love (2021)</h3>
+  
+            <a href="/subpages/7.html">
+              <button>Download</button>
+            </a>
+          </div>
+          <div class="product">
+            <a href="/subpages/8.html">
+              <img src="/img/8.jpg" alt="Product 4"
+            /></a>
+            <h3>Faraway (2023)</h3>
+  
+            <a href="/subpages/8.html">
+              <button>Download</button>
+            </a>
+          </div>
+        </div>
+        <h1 style="font-size: 35px; color: wheat">
+          <i class="bi bi-disc"></i>Horror Movies
+        </h1>
+        <div class="product-container">
+          <div class="product">
+            <a href="/subpages/17.html"> <img src="/img/17.jpg" /></a>
+            <h3>Urban Myths (2022)</h3>
+
+            <a href="/subpages/17.html">
+              <button>Download</button>
+            </a>
+          </div>
+          <div class="product">
+            <a href="/subpages/18.html"> <img src="/img/18.jpg" /></a>
+            <h3>Children of the Corn (2023)</h3>
+
+            <a href="/subpages/18.html">
+              <button>Download</button>
+            </a>
+          </div>
+          <div class="product">
+            <a href="/subpages/19.html">
+              <img src="/img/19.jpg" alt="Product 2"
+            /></a>
+            <h3>Winnie the Pooh</h3>
+
+            <a href="/subpages/19.html">
+              <button>Download</button>
+            </a>
+          </div>
+          <div class="product">
+            <a href="/subpages/20.html">
+              <img src="/img/20.jpg" alt="Product 3"
+            /></a>
+            <h3>Hush (2016)</h3>
+
+            <a href="/subpages/20.html">
+              <button>Download</button>
+            </a>
+          </div>
+        </div>
+        <div class="product-container">
+          <div class="product">
+            <a href="/subpages/21.html"> <img src="/img/21.jpg" /></a>
+            <h3>Leave (2022)</h3>
+
+            <a href="/subpages/21.html">
+              <button>Download</button>
+            </a>
+          </div>
+          <div class="product">
+            <a href="/subpages/22.html"> <img src="/img/22.jpg" /></a>
+            <h3>Alien 3 (1992)</h3>
+
+            <a href="/subpages/22.html">
+              <button>Download</button>
+            </a>
+          </div>
+          <div class="product">
+            <a href="/subpages/23.html">
+              <img src="/img/23.jpg" alt="Product 2"
+            /></a>
+            <h3>Member (2023)</h3>
+
+            <a href="/subpages/23.html">
+              <button>Download</button>
+            </a>
+          </div>
+          <div class="product">
+            <a href="/subpages/24.html">
+              <img src="/img/24.jpg" alt="Product 3"
+            /></a>
+            <h3>American Horror Stories</h3>
+
+            <a href="/subpages/24.html">
+              <button>Download</button>
+            </a>
+          </div>
+        </div>
+      </div>
+      <script src="/script.js"></script>
+    </div>
+  </body>
+</html>
