@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <!-- css link -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- fontawesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+<style>
+    /* Global Styles */
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #3e8e41;
+}
+
+/* Page Styles */
+
+#container {
+    /* max-width: 960px; */
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#logo {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#navbar {
+    background-color:F97840;
+    color: #fff;
+    padding: 10px;
+    
+}
+
+#navbar ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+#navbar ul li:last-child {
+    margin-right: 0;
+}
+
+#navbar ul li a {
+    color: #333;
+}
+
+#navbar ul li#login {
+    float: right;
+}
+
+#contact-form {
+    margin-top: 50px;
+}
+
+#contact-form h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#contact-form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#contact-form input,
+#contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#contact-form button[type="submit"] {
+    display: block;
+    margin: 0 auto;
+}
+
+#footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    margin-top: 50px;
+}
+
+</style>
+</head>
+<body>
+    <div id="container">
+        <!-- logo -->
+        <div id="logo">SPORTSWEAR</div>
+
+        <!-- navbar -->
+        <div id="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Sales.html">Sales</a></li>
+                <!-- <li><a href="#">News</a></li> -->
+                <li><a href="contact.html">Contact</a></li>
+                <!-- login Button -->
+                <!-- <li id="login"><a href="#">Login</a></li> -->
+                
+            </ul>
+        </div>
+<br><br>
+        <!-- contact form -->
+        <div id="contact-form">
+            <h1>Contact Us</h1>
+            <form action="#" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+
+        <!-- footer -->
+        <div id="footer">
+            <p>&copy; 2023 Sports Website</p>
+        </div>
+    </div>
+</body>
+</html>

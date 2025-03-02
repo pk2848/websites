@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports Website</title>
+    <!-- css link -->
+    <link rel="stylesheet" href="/sports website/css/style.css">
+    <link rel="stylesheet" href="/sports website/sub-style.css">
+    <link rel="stylesheet" href="/sports website/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <!-- fontawesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+<style>
+     .bi-cart-fill {
+  color:black;
+  font-size: 24px; /* optional: change the font size */
+     }
+/* Cart Popup */
+.cart-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.cart-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.cart-header h3 {
+  color: #fff;
+  font-size: 24px;
+}
+
+.close-btn {
+  color: #fff;
+  background-color: transparent;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.cart-items {
+  max-height: 400px;
+  overflow-y: auto;
+  padding-right: 15px;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.cart-item img {
+  height: 80px;
+  width: 80px;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.cart-item h4 {
+  font-size: 16px;
+}
+
+.cart-total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.cart-total h4 {
+  font-size: 24px;
+}
+
+.checkout-btn {
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #fff;
+  color: #000;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.checkout-btn:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+  </style>
+  </head>
+<body>
+    <div id="container">
+        <!-- logo -->
+        <div id="logo">SPORTSWEAR</div>
+
+        <!-- navbar -->
+  
+        <div id="navbar">
+            <ul>
+                <li><a href="/sports website/login/index1.html">Home</a></li>
+                <li><a href="/sports website/login/Sales.html">Sales</a></li>
+                <!-- <li><a href="#">News</a></li> -->
+                <li><a href="/sports website/login/contact.html">Contact</a></li>
+            
+                <li><i class="bi bi-cart-fill"></i><span class="cart-badge"></span></a></li>
+          <li style="margin-right:30px;">
+                <ul>
+                
+                 
+              </ul>
+              
+                     
+        
+            </div>
+        
+<div class="body1">
+    <div id="products"><br><br>
+        <h2 style="text-align: center; font-family: 'Delicious Handrawn', cursive;">CLOTHING SALE </h2>
+
+        <div class="product-container">
+          <div class="product" style="height: 500px; width: 450px; text-align: center;">
+           
+            <img src="/sports website/img/5.jpg"/></a>
+            <h3>Men's 2 Pocket Solid Track Pants</h3>
+            <h4>Rs 1999</h4>
+        
+            <button style="text-align:center;">
+              Add to Bag
+            </button>
+          </a>
+         
+          
+
+    
+    </div>
+</div>
+    <!-- ...existing HTML code... -->
+<!-- Cart Popup -->
+<div class="cart-popup">
+    <div class="cart-header">
+      <h3>Your Cart</h3>
+      <button class="close-btn"><i class="fas fa-times"></i></button>
+    </div>
+    <div class="cart-items">
+      <!-- Cart items will be dynamically added here -->
+    </div>
+    <div class="cart-total">
+      <h4>Total: <span class="total-amount">0</span></h4>
+      <button class="checkout-btn">Checkout</button>
+    </div>
+  </div>
+  
+<script>
+  // Get all the "Add to Bag" buttons
+const addToBagButtons = document.querySelectorAll(".product button");
+
+// Initialize an empty cart array
+let cart = [];
+
+// Get the cart badge element
+const cartBadge = document.querySelector(".cart-badge");
+
+// Add a click event listener to each "Add to Bag" button
+addToBagButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    // Get the product details from the product element
+    const product = button.parentElement;
+    const name = product.querySelector("h3").textContent;
+    const price = product.querySelector("h4").textContent;
+    const image = product.querySelector("img").src;
+
+    // Create an object to represent the product
+    const item = { name, price, image };
+
+    // Add the product to the cart
+    cart.push(item);
+
+    // Update the cart badge
+    cartBadge.textContent = cart.length;
+
+    // Store the cart in local storage
+    localStorage.setItem("cart", JSON.stringify(cart));
+  });
+});
+
+// Initialize the cart badge to show the number of products in the cart
+cartBadge.textContent = cart.length;
+
+</script>
+
+    <script src="/js/cart.js"></script>
+</body>
+</html>
